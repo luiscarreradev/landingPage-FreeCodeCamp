@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="shortcut icon" href="./assets/img/favicon-32x32.png" type="image/x-icon">
+        <title>Responsive website delivery</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+        <header id="header" class="headerclass">
+            <nav id="nav-bar" class="nav">
+                <div class="nav__logo">
+                    <a href="https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page" target="_black">
+                        <img id="header-img" class="nav__img" src="./assets/img/product-landing-page-logo.png" alt="logo" >
+                    </a>
+                </div>
+                <ul class="nav__bar">
+                    <li class="nav-link"><a class="nav__a" href="#features-id">Features</a></li>
+                    <li class="nav-link"><a class="nav__a" href="#video">How it Works</a></li>
+                    <li class="nav-link"><a class="nav__a" href="#pricing">Pricing</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!--=============== HERO ===============-->
+        <section class="wrapper">
+            <div class="hero">
+                <h1 class="hero__title">Handcrafted, home-made masterpices</h1>
+                <form action="https://www.freecodecamp.com/email-submit" class="hero__form" id="form">
+                    <input id="email" class="hero__email" type="email" name="email" placeholder="Enter your email address" required>
+                    <input id="submit" class="hero__submit" type="submit" value="GET STARTED" required>
+                </form>
+            </div>
+        </section>
+        <!--=============== FEATURES ===============-->
+        <section class="features" id="features-id">
+            <div class="features__info features__info--premium">
+                <h2 class="features__title">Premium Materials</h2>
+                <p class="features__description">Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+            </div>
+            <div class="features__info features__info--fast">
+                <h2 class="features__title">Fast Shipping</h2>
+                <p class="features__description">We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+            </div>
+            <div class="features__info features__info--quality">
+                <h2 class="features__title">Quality Assurance</h2>
+                <p class="features__description">For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+            </div>
+            <i id="fire" class="fa fa-3x fa-fire"></i>
+            <i id="truck" class="fa fa-3x fa-truck"></i>
+            <i id="battery" class="fa fa-3x fa-battery-full"></i>
+        </section>
+        <!--=============== VIDEOSECTION ===============-->
+        <section class="videosection">
+            <iframe class="videosection__video" id="video" width="560" height="315" src="https://www.youtube.com/embed/--bst38rfhA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+        <!--=============== PRODUCT ===============-->
+        <section class="product" id="pricing">
+            <div class="product__card product__card--600">
+                <h3 class="product__title">TENOR TROMBONE</h3>
+                <h4 class="product__price">$600</h4>
+                <ul class="product__benefits">
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum dolor.</li>
+                    <li>Lorem, ipsum.</li>
+                    <button class="product__btn">SELECT</button>
+                </ul>
+            </div>
+            <div class="product__card product__card--900">
+                <h3 class="product__title">BASS TROMBONE</h3>
+                <h4 class="product__price">$900</h4>
+                <ul class="product__benefits">
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum dolor.</li>
+                    <li>Lorem, ipsum.</li>
+                    <button class="product__btn">SELECT</button>
+                </ul>
+            </div>
+            <div class="product__card product__card--1200">
+                <h3 class="product__title">VALVE TROMBONE</h3>
+                <h4 class="product__price">$1200</h4>
+                <ul class="product__benefits">
+                    <li>Plays similar to a Trumpet</li>
+                    <li>Great for Jazz Bands</li>
+                    <li>Lorem ipsum dolor.</li>
+                    <li>Lorem, ipsum.</li>
+                    <button class="product__btn">SELECT</button>
+                </ul>
+            </div>
+        </section>
+        <!--=============== FOOTER ===============-->
+        <footer class="footer">
+            <div class="footer__logo">
+                <a href="https://linktr.ee/luiscarreramv" target="_blanck">Coded by 
+                    <img class="footer__img" src="./assets/img/race_black.png" alt="logo luis carrera">
+                </a>
+            </div>
+            <div class="footer__info">
+                <div class="footer__legal">
+                    <span>Privacy</span>
+                    <span>Term</span>
+                    <span>Contact</span>
+                </div>
+                <p>Copyright 2016, Original Trombones</p>
+            </div>
+        </footer>
+    </body>
+</html>

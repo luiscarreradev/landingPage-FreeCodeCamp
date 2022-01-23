@@ -1,0 +1,449 @@
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --html-font-size: 62.5%;
+  /*========== Colors ==========*/
+  --background-color: #eee;
+  --title-color: #000000;
+  --text-color: #0f0f0f;
+  --card-background: #ddd;
+  --btn-color: #f1c40f;
+  --icon-color: #FF8C00;
+  /*========== Font and typography ==========*/
+  --family-font: 'Lato', sans-serif;
+  --h2-font-size: 2.5rem;
+  --h3-font-size: 2rem;
+  --btn-font-size: 1.6rem;
+  --link-navbar: 1.6rem;
+  --h4-font-size: 1.8rem;
+  --normal-font-size: 1.6rem;
+  --font-weight: 700;
+  --font-weight-btc: 900;
+  --line-height: 1;
+}
+
+/*=============== BASE ===============*/
+*, ::before, ::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: var(--html-font-size);
+}
+
+body {
+  font-family: var(--family-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+h1, h2, h3 {
+  font-weight: var(--font-weight);
+  color: var(--title-color);
+  line-height: 1.5;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+i {
+  color: var(--icon-color);
+}
+
+.headerclass {
+  width: 100%;
+  min-height: 170px;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  top: 0;
+  padding: 1.5rem 0;
+  width: 100%;
+  height: auto;
+  background-color: var(--btn-color);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.nav__logo {
+  max-width: 500px;
+}
+
+.nav__img {
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+}
+
+.nav__bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  min-height: 80px;
+}
+
+.nav__a {
+  font-size: var(--link-navbar);
+  -webkit-transition: font-weight 2ms, font-size .2s ease-in-out;
+  transition: font-weight 2ms, font-size .2s ease-in-out;
+}
+
+.nav__a:hover {
+  font-weight: var(--font-weight-btc);
+  font-size: 2rem;
+}
+
+.wrapper {
+  width: 100%;
+  min-width: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper .hero {
+  min-width: 320px;
+  max-width: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 12rem;
+}
+
+.wrapper .hero__title {
+  margin-bottom: 2.5rem;
+  font-family: var(--h2-font-size);
+  text-align: center;
+  line-height: var(--line-height);
+}
+
+.wrapper .hero__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 60px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper .hero__email {
+  width: 270px;
+  height: 33px;
+  padding: .7rem;
+  margin-bottom: 1.4rem;
+}
+
+.wrapper .hero__submit {
+  width: 160px;
+  margin: 0 auto;
+  padding: .5rem .8rem;
+  font-size: var(--btn-font-size);
+  font-weight: var(--font-weight-btc);
+  background-color: var(--btn-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.wrapper .hero__submit:hover {
+  background-color: #dbaf00;
+}
+
+.features {
+  display: -ms-grid;
+  display: grid;
+  min-width: 320px;
+  max-width: 1000px;
+  margin-bottom: 10rem;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: auto auto auto;
+      grid-template-rows: auto auto auto;
+  grid-row-gap: 8rem;
+  justify-items: center;
+  text-align: center;
+  padding: 0 2rem;
+      grid-template-areas: "premium" "fast" "quality";
+}
+
+.features__info--premium {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: premium;
+}
+
+.features__info--fast {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: fast;
+}
+
+.features__info--quality {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: quality;
+}
+
+.features #fire,
+.features #truck,
+.features #battery {
+  display: none;
+  padding-left: 3rem;
+}
+
+.videosection {
+  min-width: 320px;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 9rem;
+}
+
+.videosection__video {
+  width: 100%;
+  max-width: 576px;
+}
+
+.product {
+  padding: 0 3rem;
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 1000px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2rem;
+}
+
+.product__card {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.product__title {
+  font-size: 1.6rem;
+  padding: 1.3rem 0;
+  background-color: var(--card-background);
+}
+
+.product__price {
+  font-size: 2.5rem;
+  margin: 1.5rem auto;
+}
+
+.product__benefits {
+  height: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.product__btn {
+  width: 100px;
+  margin: 1.5rem auto 1.5rem;
+  padding: 1rem .8rem;
+  font-size: var(--btn-font-size);
+  background-color: var(--btn-color);
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.product__btn:hover {
+  background-color: #dbaf00;
+}
+
+.footer {
+  display: -ms-grid;
+  display: grid;
+  padding: 3rem;
+  margin: 4rem auto 0;
+  min-width: 320px;
+  max-width: 1000px;
+  background-color: var(--btn-color);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: (minmax(320px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-row-gap: 4rem;
+}
+
+.footer__logo {
+  text-align: center;
+  margin-bottom: -0.9rem;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 100%;
+  min-width: 200px;
+  max-width: 220px;
+}
+
+.footer__info {
+  text-align: center;
+  place-self: center;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 630px) {
+  .wrapper {
+    margin-top: 1rem;
+  }
+  .headerclass {
+    min-height: 120px;
+  }
+  .nav {
+    top: -15px;
+    height: 95px;
+    padding: 1.5rem 2.5rem 1.5rem 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-color: var(--btn-color);
+  }
+  .nav__bar {
+    width: 45%;
+    max-width: 400px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .features {
+    margin: 0 auto 10rem;
+    -ms-grid-columns: auto 1fr;
+        grid-template-columns: auto 1fr;
+        grid-template-areas: "fire premium" "truck fast" "battery quality";
+    grid-column-gap: 10rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+    text-align: initial;
+  }
+  .features__info--premium {
+    -ms-grid-column-align: start;
+        justify-self: start;
+  }
+  .features #fire,
+  .features #truck,
+  .features #battery {
+    display: inline-block;
+  }
+  .features #fire {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: fire;
+  }
+  .features #truck {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: truck;
+  }
+  .features #fire {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: battery;
+  }
+  .product {
+    padding: 0;
+  }
+  .footer__logo {
+    text-align: center;
+    place-self: center start;
+  }
+  .footer__info {
+    place-self: end;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

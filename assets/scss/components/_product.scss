@@ -1,0 +1,53 @@
+.product {
+    padding: 0 3rem;
+    margin: 0 auto;
+    min-width: 320px;
+    max-width: 1000px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2rem;
+
+    &__card {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: 1px solid black;
+        border-radius: 3px;
+    }
+
+    &__title {
+        font-size: 1.6rem;
+        padding: 1.3rem 0;
+        background-color: var(--card-background);
+    }
+
+    &__price {
+        font-size: 2.5rem;
+        margin: 1.5rem auto;
+    }
+
+    &__benefits {
+        height: 180px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__btn {
+        width: 100px;
+        margin: 1.5rem auto 1.5rem;
+        padding: 1rem .8rem;
+        font-size: var(--btn-font-size);
+        background-color: var(--btn-color);
+        border: none;
+        border-radius: 2px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #dbaf00;
+           }
+    }
+
+}

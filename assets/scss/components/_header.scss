@@ -1,0 +1,46 @@
+.headerclass {
+    width: 100%;
+    min-height: 170px;
+}
+
+.nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    padding: 1.5rem 0;
+    width: 100%;
+    height: auto;
+    background-color: var(--btn-color);
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &__logo {
+        max-width: 500px;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        max-width: 300px;
+    }
+
+    &__bar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        min-height: 80px;
+    }
+
+    &__a {
+        font-size: var(--link-navbar);
+        transition: font-weight 2ms, font-size .2s ease-in-out;
+
+        &:hover {
+            font-weight: var(--font-weight-btc);
+            font-size: 2rem;
+        }
+    }
+}

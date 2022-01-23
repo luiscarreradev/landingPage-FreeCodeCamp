@@ -1,0 +1,73 @@
+@media screen and (min-width: 630px) {
+    .wrapper {
+        margin-top: 1rem;
+    }
+
+    .headerclass {
+        min-height: 120px;
+    }
+    .nav {
+        top: -15px;
+        height: 95px;
+        padding: 1.5rem 2.5rem 1.5rem 0;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: var(--btn-color);
+
+        &__bar {
+            width: 45%;
+            max-width: 400px;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    .features {
+        margin: 0 auto 10rem;
+        grid-template-columns: auto 1fr;
+        grid-template-areas:
+        "fire premium"
+        "truck fast"
+        "battery quality";
+        grid-column-gap: 10rem;
+        align-items: center;
+        justify-items: center;
+        text-align: initial;
+
+        &__info--premium {
+            justify-self: start;
+        }
+
+        #fire,
+        #truck,
+        #battery {
+            display: inline-block;
+        }
+
+        #fire {
+            grid-area: fire;
+        }
+
+        #truck {
+            grid-area: truck;
+        }
+
+        #fire {
+            grid-area: battery;
+        } 
+    }
+
+    .product {
+        padding: 0;
+    }
+
+    .footer__logo {
+        text-align: center;
+        place-self: center start;
+    }
+
+    .footer__info {
+        place-self: end;
+    }
+
+}

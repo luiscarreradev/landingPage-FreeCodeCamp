@@ -1,0 +1,35 @@
+.features {
+    display: grid;
+    min-width: 320px;
+    max-width: 1000px;
+    margin-bottom: 10rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-row-gap: 8rem; 
+    justify-items: center;
+    text-align: center;
+    padding: 0 2rem;
+    grid-template-areas: 
+    "premium"
+    "fast"
+    "quality";
+
+    &__info--premium {
+        grid-area: premium;
+    }
+
+    &__info--fast {
+        grid-area: fast;
+    }
+
+    &__info--quality {
+        grid-area: quality;
+    }
+
+    #fire,
+    #truck,
+    #battery {
+        display: none;
+        padding-left: 3rem;
+    }
+}

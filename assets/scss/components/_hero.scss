@@ -1,0 +1,52 @@
+.wrapper {
+    width: 100%;
+    min-width: 320px;
+    display: flex;
+    justify-content: center;
+
+    .hero {
+        min-width: 320px;
+        max-width: 1000px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 12rem;
+    
+        &__title {
+            margin-bottom: 2.5rem;
+            font-family: var(--h2-font-size);
+            text-align: center;
+            line-height: var(--line-height);
+        }
+    
+        &__form {
+            display: flex;
+            height: 60px;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        &__email {
+            width: 270px;
+            height: 33px;
+            padding: .7rem;
+            margin-bottom: 1.4rem;
+        }
+
+        &__submit {
+           width: 160px;
+           margin: 0 auto;
+           padding: .5rem .8rem;
+           font-size: var(--btn-font-size);
+           font-weight: var(--font-weight-btc);
+           background-color: var(--btn-color);
+           border: none;
+           border-radius: 4px;
+           cursor: pointer;
+
+           &:hover {
+            background-color: #dbaf00;
+           }
+        }
+    }
+}

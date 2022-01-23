@@ -1,0 +1,13 @@
+.videosection {
+    min-width: 320px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 9rem;
+
+    &__video {
+        width: 100%;
+        max-width: 576px;
+    }
+}
